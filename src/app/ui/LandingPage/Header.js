@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Btn } from "./Btn";
 
 export const Header = () => {
+
   return (
     <header
       className="flex flex-col sm:flex-row min-h-screen min-w-full justify-center sm:justify-around items-center pb-32"

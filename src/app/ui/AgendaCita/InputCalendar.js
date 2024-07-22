@@ -1,23 +1,18 @@
-"use client";
-import { Calendar } from "@nextui-org/react";
-import { parseDate, today, getLocalTimeZone } from "@internationalized/date";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import {Calendar} from "@nextui-org/react";
+import {parseDate} from '@internationalized/date';
 
-export const InputCalendar = ({ handleChange }) => {
-  const [value, setValue] = useState(parseDate("2024-03-07"));
+export default function InputCalendar( {handleChange} ) {
+
+  const [value, setValue] = useState('');
+
   useEffect(() => {
-    handleChange({ target: { name: "date", value: value } });
+    if(value) handleChange( {target: { name: 'date', value: value}} )
   }, [value]);
 
   return (
-    <Calendar
-      aria-label="Date (Controlled)"
-      value={value}
-      maxValue={parseDate("2024-07-20")}
-      minValue={today(getLocalTimeZone())}
-      className="mt-3"
-      name="date"
-      onChange={setValue}
-    />
+    <div className="mt-3">
+      <Calendar aria-label="Date (No Selection)" value={value} onChange={setValue}/>
+    </div>
   );
-};
+}

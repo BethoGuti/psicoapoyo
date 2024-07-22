@@ -1,12 +1,14 @@
 {
   "name": "psicoapoyo",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -17,6 +19,9 @@
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
     "@nextui-org/react": "^2.4.2",
+    "@vercel/postgres": "^0.9.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
     "embla-carousel-autoplay": "^8.1.6",
     "embla-carousel-react": "^8.1.6",
     "framer-motion": "^11.2.14",

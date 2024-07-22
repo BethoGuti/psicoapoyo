@@ -34,12 +34,14 @@ export const Conocenos = () => {
           width={400}
           height={200}
           className="hidden sm:block"
+          alt="Psicología"
         />
         <Image
           src="/img-conocenos.jpg"
           width={320}
           height={160}
           className="block sm:hidden"
+          alt="Psicología"
         />
       </div>
     </section>

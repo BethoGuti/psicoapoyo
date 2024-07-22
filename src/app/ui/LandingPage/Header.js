@@ -41,12 +41,14 @@ export const Header = () => {
           width={400}
           height={200}
           className="hidden sm:block"
+          alt="Psicología"
         />
         <Image
           src="/img-header.svg"
           width={320}
           height={160}
           className="block sm:hidden"
+          alt="Psicología"
         />
       </div>
     </header>

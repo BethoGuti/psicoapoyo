@@ -18,6 +18,7 @@ const slides = [
       "Manejo del estrés",
     ],
     img: "/individual.jpg",
+    alt: "tratamiento individual"
   },
   {
     nombre: "Terapia en parejas",
@@ -27,6 +28,7 @@ const slides = [
       "Reconciliación y fortalecimientos de relaciones",
     ],
     img: "/pareja.jpg",
+    alt: "tratamiento en parejas"
   },
   {
     nombre: "Terapia de grupo",
@@ -36,6 +38,7 @@ const slides = [
       "Apoyo en transiciones familiares",
     ],
     img: "/grupo.jpeg",
+    alt: "tratamiento en grupo"
   },
   {
     nombre: 'Psicología Infantil',
@@ -44,7 +47,8 @@ const slides = [
         'Asesoramiento para padres',
         'Tratamiento para problemas de conducta'
     ],
-    img: '/infantil.jpg'
+    img: '/infantil.jpg',
+    alt: "tratamiento infantil"
   }
 ];
 
